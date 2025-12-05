@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "ViralX",
+  "version": "0.1.0",
+  "description": "Trend Surfer, Reply Guy, and Viral Vault for X (Twitter).",
+
+  "action": {
+    "default_title": "ViralX",
+    "default_popup": "index.html"
+  },
+
+  "permissions": [
+    "activeTab",
+    "storage",
+    "scripting"
+  ],
+
+  "host_permissions": [
+    "https://x.com/*",
+    "https://twitter.com/*"
+  ],
+
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  }
+}
+
